@@ -2,6 +2,10 @@
 
 Provide navigation to a stack of view controllers.
 
+##Installation
+
+    pod 'VVVNavigationController-OSX', :git => 'https://github.com/Cronos/VVVNavigationController-OSX.git'
+
 ##Usage
 
 ###Init a navigation controller
