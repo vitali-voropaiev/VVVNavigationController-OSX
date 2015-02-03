@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="VVVNavigationController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY" customClass="ExampleView2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="306"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="07l-e3-f8g">
+                    <rect key="frame" x="63" y="136" width="194" height="32"/>
+                    <buttonCell key="cell" type="push" title="Push new view controller" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TBc-cJ-CkD">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="McN-iR-iAy" id="lei-0H-eqv"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-p7-RM4">
+                    <rect key="frame" x="79" y="200" width="161" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="This # controller" id="NXO-2i-ibl">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="McN-iR-iAy">
+                    <rect key="frame" x="75" y="86" width="169" height="32"/>
+                    <buttonCell key="cell" type="push" title="Pop this view controller" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dgb-kz-cNF">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="07l-e3-f8g" id="Xiu-W5-Z3y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="07l-e3-f8g" firstAttribute="top" secondItem="xeB-p7-RM4" secondAttribute="bottom" constant="36" id="G69-ty-bnD"/>
+                <constraint firstAttribute="centerY" secondItem="07l-e3-f8g" secondAttribute="centerY" id="NcN-nw-gsl"/>
+                <constraint firstAttribute="centerX" secondItem="xeB-p7-RM4" secondAttribute="centerX" id="Ocs-TL-aFb"/>
+                <constraint firstAttribute="centerX" secondItem="McN-iR-iAy" secondAttribute="centerX" id="Yfm-FY-8IU"/>
+                <constraint firstAttribute="centerX" secondItem="07l-e3-f8g" secondAttribute="centerX" id="bIE-EK-vko"/>
+                <constraint firstItem="McN-iR-iAy" firstAttribute="top" secondItem="07l-e3-f8g" secondAttribute="bottom" constant="29" id="kv1-61-KxQ"/>
+            </constraints>
+            <animations/>
+            <connections>
+                <outlet property="popButton" destination="McN-iR-iAy" id="j4b-kl-xn6"/>
+                <outlet property="pushButton" destination="07l-e3-f8g" id="Ud9-jc-HRY"/>
+                <outlet property="title" destination="xeB-p7-RM4" id="N2r-6k-N37"/>
+            </connections>
+            <point key="canvasLocation" x="545" y="354"/>
+        </customView>
+    </objects>
+</document>
