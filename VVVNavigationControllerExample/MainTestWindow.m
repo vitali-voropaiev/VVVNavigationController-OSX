@@ -32,11 +32,10 @@
 
 #pragma mark - Accessors
 
--(CGRect)frameForRightPanel
+-(NSRect)frameForRightPanel
 {
-    CGSize frameSize = _rightPanel.frame.size;
-    frameSize = (CGSize){300,300};
-    return (CGRect){{0.0, 0.0},{frameSize.width, frameSize.height}};
+    NSSize frameSize = _rightPanel.frame.size;
+    return (NSRect){CGPointZero,frameSize};
 }
 
 
@@ -44,7 +43,7 @@
 {
     NSRect frame = _rightPanel.frame;
     ExampleViewController1 *controller = [ExampleViewController1 exampleController];
-    _navigationController = [[VVVNavigationController alloc] initWithFrame:(NSRect){{0.0,0.0}, {frame.size.width, frame.size.height}} rootViewController:controller];
+    _navigationController = [[VVVNavigationController alloc] initWithFrame:(NSRect){CGPointZero, frame.size} rootViewController:controller];
     [_navigationController setPushDirection:kVVVNavigationDirectionToUp];
     [_rightPanel addSubview:_navigationController.view];
 }
@@ -58,14 +57,12 @@
 
 -(void)addTest2Controller
 {
-//    ExampleViewController2 *controller = [ExampleViewController2 exampleController];
-//    VVVNavigationController *navigationController = [[VVVNavigationController alloc] initWithFrame:[self frameForRightPanel] rootViewController:controller];
-//    [_navigationController pushViewController:navigationController animated:YES];
-    
-    ExampleViewController1 *controller = [ExampleViewController1 exampleController];
-    
-    [_navigationController pushViewController:controller animated:YES];
+//    ExampleViewController1 *controller = [ExampleViewController1 exampleController];
+//    [_navigationController pushViewController:controller animated:YES];
 
+    ExampleViewController2 *controller = [ExampleViewController2 exampleController];
+    VVVNavigationController *navigationController = [[VVVNavigationController alloc] initWithFrame:[self frameForRightPanel] rootViewController:controller];
+    [_navigationController pushViewController:navigationController animated:YES];
 }
 
 #pragma mark - Actions

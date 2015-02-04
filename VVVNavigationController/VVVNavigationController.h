@@ -54,7 +54,7 @@ typedef NS_OPTIONS(NSUInteger, tVVVNavigationDirection)
  *  Push viewController to self view with/without animation
  *
  */
--(void)pushViewController:(NSViewController *)viewController animated:(BOOL)animated;
+-(void)pushViewController:(VVVNavigatedViewController *)viewController animated:(BOOL)animated;
 
 /**
  *  Pop curent (visible) view controller with/without animation
