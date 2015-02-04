@@ -9,12 +9,6 @@
 #import "VVVNavigatedViewController.h"
 #import "VVVNavigationController.h"
 
-@interface VVVNavigatedViewController ()
-{
-    VVVNavigationController *_navigationController;
-}
-@end
-
 @implementation VVVNavigatedViewController
 
 -(void)willPresentIn:(VVVNavigationController *)navigationController

@@ -12,7 +12,7 @@
 
 @interface VVVNavigatedViewController : NSViewController
 
-@property (nonatomic, strong, readonly) VVVNavigationController *navigationController;
+@property (nonatomic, weak, readonly) VVVNavigationController *navigationController;
 
 -(void)willPresentIn:(VVVNavigationController *)navigationController;
 -(void)didPresentIn:(VVVNavigationController *)navigationController;
