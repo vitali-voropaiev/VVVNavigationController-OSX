@@ -21,10 +21,18 @@
 		E3F276DC1A76727E00597D02 /* ExampleViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F276DA1A76727E00597D02 /* ExampleViewController2.m */; };
 		E3F276DD1A76727E00597D02 /* ExampleViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F276DB1A76727E00597D02 /* ExampleViewController2.xib */; };
 		E3F276E01A7676D800597D02 /* ExampleView2.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F276DF1A7676D800597D02 /* ExampleView2.m */; };
+		E3F4844F1A824D4D00993423 /* VVVNavigatedControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F4844B1A824D3C00993423 /* VVVNavigatedControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E3F276C61A76719700597D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3F276AA1A76719700597D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3F276B11A76719700597D02;
+			remoteInfo = VVVNavigationControllerExample;
+		};
+		E3F4843E1A82453400993423 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E3F276AA1A76719700597D02 /* Project object */;
 			proxyType = 1;
@@ -60,6 +68,9 @@
 		E3F276DB1A76727E00597D02 /* ExampleViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleViewController2.xib; sourceTree = "<group>"; };
 		E3F276DE1A7676D800597D02 /* ExampleView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleView2.h; sourceTree = "<group>"; };
 		E3F276DF1A7676D800597D02 /* ExampleView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleView2.m; sourceTree = "<group>"; };
+		E3F484461A82453400993423 /* VVVNavigatedControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVVNavigatedControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F4844A1A824D3C00993423 /* VVVNavigatedControllerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VVVNavigatedControllerTests-Info.plist"; sourceTree = "<group>"; };
+		E3F4844B1A824D3C00993423 /* VVVNavigatedControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVVNavigatedControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3F484411A82453400993423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +103,7 @@
 			children = (
 				E3F276D51A7671CE00597D02 /* VVVNavigationController */,
 				E3F276B41A76719700597D02 /* VVVNavigationControllerExample */,
+				E3F484491A824D3C00993423 /* VVVNavigatedControllerTests */,
 				E3F276C81A76719700597D02 /* VVVNavigationControllerExampleTests */,
 				E3F276B31A76719700597D02 /* Products */,
 			);
@@ -95,6 +114,7 @@
 			children = (
 				E3F276B21A76719700597D02 /* VVVNavigationControllerExample.app */,
 				E3F276C51A76719700597D02 /* VVVNavigationControllerExampleTests.xctest */,
+				E3F484461A82453400993423 /* VVVNavigatedControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +180,15 @@
 			path = VVVNavigationController;
 			sourceTree = "<group>";
 		};
+		E3F484491A824D3C00993423 /* VVVNavigatedControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3F4844A1A824D3C00993423 /* VVVNavigatedControllerTests-Info.plist */,
+				E3F4844B1A824D3C00993423 /* VVVNavigatedControllerTests.m */,
+			);
+			path = VVVNavigatedControllerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,6 +227,24 @@
 			productReference = E3F276C51A76719700597D02 /* VVVNavigationControllerExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E3F4843C1A82453400993423 /* VVVNavigatedControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3F484431A82453400993423 /* Build configuration list for PBXNativeTarget "VVVNavigatedControllerTests" */;
+			buildPhases = (
+				E3F4843F1A82453400993423 /* Sources */,
+				E3F484411A82453400993423 /* Frameworks */,
+				E3F484421A82453400993423 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3F4843D1A82453400993423 /* PBXTargetDependency */,
+			);
+			name = VVVNavigatedControllerTests;
+			productName = VVVNavigationControllerExampleTests;
+			productReference = E3F484461A82453400993423 /* VVVNavigatedControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -231,6 +278,7 @@
 			targets = (
 				E3F276B11A76719700597D02 /* VVVNavigationControllerExample */,
 				E3F276C41A76719700597D02 /* VVVNavigationControllerExampleTests */,
+				E3F4843C1A82453400993423 /* VVVNavigatedControllerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +296,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E3F276C31A76719700597D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F484421A82453400993423 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +336,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3F4843F1A82453400993423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F4844F1A824D4D00993423 /* VVVNavigatedControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +351,11 @@
 			isa = PBXTargetDependency;
 			target = E3F276B11A76719700597D02 /* VVVNavigationControllerExample */;
 			targetProxy = E3F276C61A76719700597D02 /* PBXContainerItemProxy */;
+		};
+		E3F4843D1A82453400993423 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3F276B11A76719700597D02 /* VVVNavigationControllerExample */;
+			targetProxy = E3F4843E1A82453400993423 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -386,6 +454,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VVVNavigationControllerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -397,6 +466,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VVVNavigationControllerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -437,6 +507,42 @@
 			};
 			name = Release;
 		};
+		E3F484441A82453400993423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VVVNavigatedControllerTests/VVVNavigatedControllerTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = VVVNavigatedControllerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VVVNavigationControllerExample.app/Contents/MacOS/VVVNavigationControllerExample";
+			};
+			name = Debug;
+		};
+		E3F484451A82453400993423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VVVNavigatedControllerTests/VVVNavigatedControllerTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = VVVNavigatedControllerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VVVNavigationControllerExample.app/Contents/MacOS/VVVNavigationControllerExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,6 +569,15 @@
 			buildConfigurations = (
 				E3F276D31A76719700597D02 /* Debug */,
 				E3F276D41A76719700597D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3F484431A82453400993423 /* Build configuration list for PBXNativeTarget "VVVNavigatedControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F484441A82453400993423 /* Debug */,
+				E3F484451A82453400993423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
